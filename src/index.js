@@ -3,9 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './css/dist.css';
 import reportWebVitals from './reportWebVitals';
 
+// components
+import { App } from './App';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <h1 class="text-4xl text-emerald-700"> Hello world!</h1>
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
